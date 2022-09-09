@@ -1,0 +1,1378 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        max-width: 100vw;
+    }
+    
+    header {
+        background-color: #F4F4F4;
+    }
+    
+    .scrolling-active {
+        background-color: white;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    }
+    
+    nav {
+        background-color: #F4F4F4;
+        color: black;
+        display: flex;
+        position: fixed;
+        z-index: 3;
+        width: 100vw;
+    }
+    
+    nav .mainMenu {
+        display: flex;
+        list-style: none;
+        margin-left: 7rem;
+    }
+    
+    nav .mainMenu li a {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 18px;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    nav .openMenu {
+        font-size: 1.5rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+        top: 10px;
+        left: 20px;
+    }
+    
+    nav .mainMenu .closeMenu {
+        font-size: 1.5rem;
+        display: none;
+        cursor: pointer;
+        top: 30px;
+        left: 30px;
+    }
+    
+    nav .logo {
+        margin-left: 8rem;
+        margin-top: .8rem;
+        cursor: pointer;
+    }
+    
+    .logSign {
+        padding-left: 16rem;
+        padding-top: .8rem;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .Log button {
+        color: black;
+        background-color: unset;
+        padding-top: .6rem;
+        font-size: 14px;
+        font-weight: bold;
+        border-style: unset;
+    }
+    
+    .Sign button {
+        color: #3374FF;
+        border-color: #3374FF;
+        background-color: unset;
+        padding: .4rem 1.5rem;
+        border-radius: .2rem;
+        border-width: .1rem;
+        font-size: medium;
+        font-weight: bold;
+    }
+    
+    .Started {
+        display: none;
+    }
+    
+    section {
+        text-align: center;
+        padding-top: 8rem;
+        margin-bottom: 5rem;
+    }
+    
+    section h1 {
+        font-size: 40px;
+        margin-bottom: 2rem;
+        padding: 0 20rem;
+    }
+    
+    section button {
+        background-color: #3374FF;
+        padding: .7rem 2rem;
+        border-radius: .2rem;
+        border-style: unset;
+        color: white;
+        position: absolute;
+        font-weight: bold;
+        right: 42%;
+    }
+    
+    .slider {
+        height: 450px;
+        background: url(./images/img1.jpg);
+        background-position-x: 2rem;
+        background-repeat: no-repeat;
+        animation-name: slide;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        /* animation-delay: 3s; */
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes slide {
+        from {
+            background: url(./images/img1.jpg);
+            background-size: 1200px;
+            background-position-x: 2rem;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        to {
+            background: url(./images/img2.jpg);
+            background-size: 1200px;
+            background-position-x: 2rem;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+    }
+    
+    .section2 article {
+        text-align: center;
+    }
+    
+    .section2 article h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .section2 article p {
+        margin: auto;
+        padding: 0 24.5rem;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 10px;
+        color: grey;
+    }
+    
+    .btn2 {
+        justify-content: center;
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .btn2 button {
+        width: 10%;
+        border-style: none;
+        border-radius: .2rem;
+        padding: .6rem;
+        background-color: #3374FF;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .btn2 button:hover {
+        background-color: #144DC7;
+    }
+    
+    .btn2 a {
+        text-decoration: none;
+        color: #3374FF;
+        font-size: 14px;
+        transition: color 0.1s linear;
+        font-weight: bold;
+        margin-top: .7rem;
+        font-family: SQMarket-Medium, SQMarket, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+    
+    .section2 .img3 {
+        margin-top: 4rem;
+    }
+    
+    .img3 img {
+        height: 330px;
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .section3 {
+        margin-top: 4rem;
+    }
+    
+    .section3 h2 {
+        text-align: center;
+        margin: 0 25rem;
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    
+    .direction {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    hr {
+        border: 1px solid black;
+        transform: rotate(90deg);
+    }
+    
+    .block .load {
+        display: flex;
+    }
+    
+    .load .get p {
+        text-align: center;
+    }
+    
+    .section4 {
+        margin-top: 5rem;
+    }
+    
+    .section4 article {
+        text-align: center;
+    }
+    
+    .section4 article h2 {
+        margin: 0 25rem;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    
+    .section4 article p {
+        margin: 2rem 16.5rem;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .btn3 {
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .btn3 button {
+        width: 9%;
+        border-style: none;
+        border-radius: .2rem;
+        padding: .6rem;
+        background-color: #3374FF;
+        color: white;
+        font-size: 14px;
+    }
+    
+    .btn3 button:hover {
+        background-color: #144DC7;
+    }
+    
+    .btn3 a {
+        text-decoration: none;
+        color: #3374FF;
+        font-size: 14px;
+        transition: color 0.1s linear;
+        font-weight: bold;
+        margin-top: .5rem;
+        font-family: SQMarket-Medium, SQMarket, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+    
+    .section4 .img4 {
+        margin-top: 4rem;
+    }
+    
+    .img4 .img4-1 {
+        height: auto;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .img4 .img4-2 {
+        height: auto;
+        width: 72%;
+        position: relative;
+        padding-top: 17.5rem;
+        left: 12rem;
+    }
+    
+    .section5 article {
+        margin-top: 3.5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+    .section5 article p {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 14px;
+        color: #70767C;
+    }
+    
+    .section5 article h2 {
+        margin: 0 24rem;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+    
+    .container {
+        right: 0;
+        min-height: 80vh;
+        max-width: 100vw;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cards {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 800px);
+        grid-gap: 1rem;
+        pointer-events: none;
+    }
+    
+    .section6 article {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    .section6 article h3 {
+        font-size: 22px;
+    }
+    
+    .section6 article p {
+        padding: 0 22.5rem;
+        line-height: 1.5;
+        font-size: 17px;
+        margin-top: 1rem;
+    }
+    
+    .container2 {
+        margin-top: 3rem;
+    }
+    
+    .container2 img {
+        width: 100%;
+    }
+    
+    .business {
+        background-color: #F5F6F7;
+    }
+    
+    .business div {
+        padding-top: 5rem;
+        text-align: center;
+    }
+    
+    .business div button {
+        border-style: none;
+        border-radius: .2rem;
+        padding: .7rem;
+        background-color: #3374FF;
+        color: white;
+        font-size: 16px;
+        width: 18%;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+    }
+    
+    .business div button:hover {
+        background-color: #144DC7;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-left: 7rem;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 300px;
+        height: 60px;
+        user-select: none;
+    }
+    
+    .title {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    .icon {
+        cursor: pointer;
+        padding: 8px 30px 8px 15px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .dropdown {
+        height: auto;
+        position: relative;
+    }
+    
+    .dropdown li {
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .active {
+        overflow: visible;
+    }
+    /* .grid {
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+     */
+    
+    @media(max-width:950px) {
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            margin-left: 0;
+            padding-top: 5rem;
+            background: white;
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .logo {
+            position: fixed;
+            top: 0;
+            padding-left: 30%;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+        }
+        nav .mainMenu .logSign {
+            padding-left: 35%;
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a {
+            padding-left: 35%;
+            font-size: 1.2rem;
+        }
+        .logSign {
+            display: block;
+            padding: 12px;
+        }
+        .Log button {
+            background-color: unset;
+            padding: .7rem 2rem;
+            border-radius: .2rem;
+            border: 1px solid blue;
+            color: black;
+            font-weight: bold;
+            width: 50%;
+        }
+        .Sign button {
+            background-color: unset;
+            padding: .7rem 2rem;
+            border-radius: .2rem;
+            border: 1px solid blue;
+            color: black;
+            font-weight: bold;
+            width: 50%;
+            margin-top: 1rem;
+        }
+        section h1 {
+            font-size: 32px;
+            margin-bottom: 2rem;
+            padding: 0 16rem;
+        }
+        section button {
+            right: 38%;
+        }
+        .slider {
+            height: 350px;
+        }
+        @keyframes slide {
+            from {
+                background: url(./images/img1.jpg);
+                background-size: 900px;
+                background-position-x: none;
+                background-repeat: no-repeat;
+            }
+            to {
+                background: url(./images/img2.jpg);
+                background-size: 900px;
+                background-position-x: none;
+                background-repeat: no-repeat;
+            }
+        }
+        .section2 article p {
+            padding: 0 12.5rem;
+            font-size: 17px;
+        }
+        .section2 button {
+            width: 12%;
+        }
+        .img3 img {
+            height: 238px;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+        }
+        .section3 h2 {
+            margin: 0 15rem;
+            font-size: 35px;
+        }
+        .direction {
+            display: block;
+            justify-content: center;
+            gap: 5rem;
+            margin: 5rem 15rem;
+        }
+        .direction div {
+            margin-top: 2rem;
+        }
+        hr {
+            padding-right: 5rem;
+            margin: 3rem 0;
+            border: 1px solid black;
+            width: 15%;
+            transform: rotate(90deg);
+        }
+        .section4 article h2 {
+            margin: 0 16rem;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+        .section4 article p {
+            margin: 2rem 7.5rem;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .section4 button {
+            width: 12%;
+        }
+        .img4 .img4-1 {
+            height: auto;
+            /* width: 1680px; */
+            height: auto;
+            /* margin-left: 50%;
+            transform: translateX(-50%); */
+            max-width: none;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+        }
+        .img4 .img4-2 {
+            height: auto;
+            width: 72%;
+            position: relative;
+            padding-top: 15rem;
+            left: 4rem;
+        }
+        .section5 article h2 {
+            font-size: 30px;
+            margin: 0 15rem;
+        }
+        .container {
+            right: 0;
+            min-height: 50vh;
+            width: 100%;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .cards {
+            left: 2rem;
+            grid-template-columns: repeat(3, 650px);
+        }
+        .section6 article h3 {
+            margin-top: 3rem;
+            padding: 0 20rem;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        .section6 article p {
+            padding: 0 14rem;
+            line-height: 1.5;
+            margin-top: 1rem;
+        }
+        .business div button {
+            width: 30%;
+        }
+        .footer {
+            display: none;
+        }
+        .mobile {
+            display: contents;
+        }
+        details {
+            padding: 0rem 10rem;
+            margin-top: 2rem;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .mobile hr {
+            padding: none;
+            margin: 1rem 5rem 1rem 11rem;
+            border: 1px solid grey;
+            width: 50%;
+            transform: rotate(0deg);
+        }
+        .grid {
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+            display: block;
+            padding-left: 40%;
+        }
+    }
+    
+    @media(max-width:780px) {
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            margin-left: 0;
+            padding-top: 5rem;
+            background: white;
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .logo {
+            position: fixed;
+            top: 0;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a {
+            font-size: 1.2rem;
+        }
+        .logSign {
+            display: inline-block;
+            padding: 12px;
+        }
+        .Sign {
+            display: none;
+        }
+        .Started {
+            display: contents;
+        }
+        .Started button {
+            margin-top: 1rem;
+            background-color: #3374FF;
+            padding: .7rem 2rem;
+            border-radius: .2rem;
+            border-style: unset;
+            color: white;
+            font-weight: bold;
+            width: 50%;
+        }
+        section h1 {
+            font-size: 32px;
+            margin-bottom: 2rem;
+            padding: 0 10rem;
+        }
+        section button {
+            right: 38%;
+        }
+        .slider {
+            height: 300px;
+        }
+        @keyframes slide {
+            from {
+                background: url(./images/img1.jpg);
+                background-size: 780px;
+                background-position-x: none;
+            }
+            to {
+                background: url(./images/img2.jpg);
+                background-size: 780px;
+                background-position-x: none;
+            }
+        }
+        .section2 article p {
+            padding: 0 12.5rem;
+            font-size: 17px;
+        }
+        .btn2 button {
+            width: 18%;
+        }
+        .img3 img {
+            height: 238px;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+        }
+        .section3 h2 {
+            margin: 0 10rem;
+        }
+        .direction {
+            display: block;
+            justify-content: center;
+            gap: 5rem;
+            margin: 5rem 12.5rem;
+        }
+        .direction div {
+            margin-top: 2rem;
+        }
+        hr {
+            padding-right: 5rem;
+            margin: 3rem 0;
+            border: 1px solid black;
+            width: 15%;
+            transform: rotate(90deg);
+        }
+        .section4 article h2 {
+            margin: 0 11rem;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+        .section4 article p {
+            margin: 2rem 7.5rem;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .btn3 button {
+            width: 18%;
+        }
+        .img4 .img4-1 {
+            height: auto;
+            /* width: 1680px; */
+            height: auto;
+            /* margin-left: 50%;
+            transform: translateX(-50%); */
+            max-width: none;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+        }
+        .img4 .img4-2 {
+            height: auto;
+            width: 72%;
+            position: relative;
+            padding-top: 15rem;
+            left: 4rem;
+        }
+        .section5 article h2 {
+            margin: 0 8rem;
+        }
+        .container {
+            right: 0;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .cards {
+            left: 2rem;
+            grid-template-columns: repeat(3, 650px);
+        }
+        .section6 article h3 {
+            margin-top: 3rem;
+            padding: 0 16rem;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        .section6 article p {
+            padding: 0 7.5rem;
+            line-height: 1.5;
+            margin-top: 1rem;
+            font-size: 18px;
+        }
+        .business div button {
+            width: 30%;
+        }
+        .footer {
+            display: none;
+        }
+        .mobile {
+            display: contents;
+        }
+        details {
+            padding: 0rem 5rem;
+            margin-top: 2rem;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .mobile hr {
+            padding: none;
+            margin: 1rem 5rem 1rem 6rem;
+            border: 1px solid grey;
+            width: 70%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @media(max-width:650px) {
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            margin-left: 0;
+            padding-top: 5rem;
+            background: white;
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .logo {
+            padding-left: 20%;
+            position: fixed;
+            top: 0;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a {
+            font-size: 1.2rem;
+        }
+        .logSign {
+            display: inline-block;
+            padding: 12px;
+        }
+        section h1 {
+            font-size: 32px;
+            margin-bottom: 2rem;
+            padding: 0 10rem;
+        }
+        section button {
+            right: 35%;
+        }
+        .slider {
+            height: 300px;
+        }
+        @keyframes slide {
+            from {
+                background: url(./images/img1.jpg);
+                background-size: 800px;
+                background-position-x: -5rem;
+            }
+            to {
+                background: url(./images/img2.jpg);
+                background-size: 800px;
+                background-position-x: -5rem;
+            }
+        }
+        .section2 article p {
+            padding: 0 12rem;
+            font-size: 17px;
+        }
+        .btn2 button {
+            width: 18%;
+        }
+        .img3 img {
+            height: 238px;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+        }
+        .section3 h2 {
+            margin: 0 10rem;
+        }
+        .direction {
+            display: block;
+            justify-content: center;
+            gap: 5rem;
+            margin: 5rem 12.5rem;
+        }
+        .direction div {
+            margin-top: 2rem;
+        }
+        hr {
+            padding-right: 5rem;
+            margin: 3rem 0;
+            border: 1px solid black;
+            width: 15%;
+            transform: rotate(90deg);
+        }
+        .section4 article h2 {
+            margin: 0 11rem;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+        .section4 article p {
+            margin: 2rem 7.5rem;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .btn3 button {
+            width: 18%;
+        }
+        .img4 .img4-1 {
+            height: auto;
+            /* width: 1680px; */
+            height: auto;
+            /* margin-left: 50%;
+            transform: translateX(-50%); */
+            max-width: none;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+        }
+        .img4 .img4-2 {
+            height: auto;
+            width: 72%;
+            position: relative;
+            padding-top: 15rem;
+            left: 4rem;
+        }
+        .section5 article h2 {
+            margin: 0 8rem;
+        }
+        .container {
+            right: 0;
+            min-height: 20vh;
+            width: 100%;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .cards {
+            left: 2rem;
+            grid-template-columns: repeat(3, 400px);
+        }
+        .section6 article h3 {
+            margin-top: 3rem;
+            padding: 0 10rem;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        .section6 article p {
+            padding: 0 7.5rem;
+            line-height: 1.5;
+            margin-top: 1rem;
+            font-size: 18px;
+        }
+        .business div button {
+            width: 30%;
+        }
+        .footer {
+            display: none;
+        }
+        .mobile {
+            display: contents;
+        }
+        details {
+            padding: 0rem 5rem;
+            margin-top: 2rem;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .mobile hr {
+            padding: none;
+            margin: 1rem 5rem 1rem 6rem;
+            border: 1px solid grey;
+            width: 70%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @media(max-width:717px) {
+        .sign {
+            display: none;
+        }
+        .logo {
+            padding-left: 8rem;
+        }
+        section h1 {
+            font-size: 32px;
+            margin-bottom: 2rem;
+            padding: 0 8rem;
+        }
+        .section2 article p {
+            padding: 0 11.5rem;
+            font-size: 17px;
+        }
+        .section4 article h2 {
+            margin: 0 9rem;
+        }
+    }
+    
+    @media(max-width:420px) {
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            margin-left: 0;
+            padding-top: 5rem;
+            background: white;
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .logo {
+            padding-left: 8%;
+            position: fixed;
+            top: 0;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+        }
+        nav .mainMenu .logSign {
+            padding-left: 20%;
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a {
+            font-size: 1.2rem;
+            padding-left: 20%;
+        }
+        .Log button {
+            width: 70%;
+        }
+        .Started button {
+            width: 70%;
+        }
+        .logSign {
+            display: inline-block;
+            padding: 12px;
+        }
+        section h1 {
+            font-size: 32px;
+            margin-bottom: 2rem;
+            padding: 0 4rem;
+        }
+        section button {
+            right: 30%;
+            width: 45%;
+            padding: .8rem;
+        }
+        .slider {
+            height: 300px;
+        }
+        @keyframes slide {
+            from {
+                background: url(./images/img1.jpg);
+                background-size: 780px;
+                background-position-x: -9rem;
+            }
+            to {
+                background: url(./images/img2.jpg);
+                background-size: 780px;
+                background-position-x: -9rem;
+            }
+        }
+        .section2 article h2 {
+            font-size: 25px;
+            margin: 0 2rem;
+            line-height: none;
+        }
+        .section2 article p {
+            padding: 0 2.8rem;
+            font-size: 17px;
+        }
+        .btn2 button {
+            width: 25%;
+        }
+        .btn3 button {
+            width: 25%;
+        }
+        .img3 img {
+            height: 200px;
+            object-position: -14rem;
+            object-fit: cover;
+            width: 100%;
+        }
+        .section3 h2 {
+            margin: 0 3.5rem;
+        }
+        .direction {
+            display: block;
+            justify-content: center;
+            gap: 5rem;
+            margin: 5rem 7rem;
+        }
+        .section4 article h2 {
+            margin: 0 4rem;
+        }
+        .section4 article p {
+            margin: 2rem 4rem;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .img4 .img4-1 {
+            width: 400px;
+            height: 400px;
+        }
+        .img4 .img4-2 {
+            height: auto;
+            width: 72%;
+            position: relative;
+            padding-top: 16rem;
+            left: 4rem;
+        }
+        .section5 article h2 {
+            margin: 0 4rem;
+            font-size: 22px;
+        }
+        .card img {
+            width: 100%;
+        }
+        .container {
+            right: 0;
+            min-height: 30vh;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .cards {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-gap: 1rem;
+            pointer-events: none;
+        }
+        .section6 article h3 {
+            margin-top: 0;
+            padding: 0 4rem;
+            font-size: 22px;
+            line-height: 1.3;
+        }
+        .section6 article p {
+            padding: 0 4.2rem;
+            margin-top: 1rem;
+            font-size: 16px;
+        }
+        .business div {
+            padding-top: 5rem;
+            text-align: center;
+        }
+        .business div h2 {
+            padding: 0 5rem;
+            font-size: 22px;
+            font-family: SQMarket-Medium, SQMarket, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+        .business div button {
+            font-size: 16px;
+            width: 60%;
+            margin-bottom: 5rem;
+        }
+        details {
+            padding: 0rem 3rem;
+            margin-top: 2rem;
+        }
+        .mobile hr {
+            padding: none;
+            margin: 1rem 3rem 1rem 4rem;
+            border: 1px solid grey;
+            width: 70%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @media(max-width:390px) {
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            padding-top: 5rem;
+            background: white;
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .logo {
+            position: fixed;
+            top: 0;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a {
+            font-size: 1.2rem;
+        }
+        .logSign {
+            display: inline-block;
+            padding: 12px;
+        }
+        section h1 {
+            font-size: 35px;
+            margin-bottom: 2rem;
+            padding: 0 2rem;
+        }
+        section button {
+            right: 20%;
+            width: 60%;
+            padding: .8rem;
+        }
+        .slider {
+            height: 300px;
+        }
+        @keyframes slide {
+            from {
+                background: url(./images/img1.jpg);
+                background-size: 900px;
+                background-position-x: -10rem;
+            }
+            to {
+                background: url(./images/img2.jpg);
+                background-size: 900px;
+                background-position-x: -10rem;
+            }
+        }
+        .section2 article h2 {
+            font-size: 25px;
+            margin: 0 2rem;
+            line-height: none;
+        }
+        .section2 article p {
+            padding: 0 2.5rem;
+            font-size: 18px;
+        }
+        .btn2 button {
+            width: 40%;
+        }
+        .img3 img {
+            height: 158px;
+            object-position: -11rem;
+            object-fit: cover;
+            width: 100%;
+        }
+        .section3 h2 {
+            font-size: 26px;
+            margin: 0 4rem;
+        }
+        .direction {
+            display: block;
+            justify-content: center;
+            gap: 5rem;
+            margin: 5rem 4rem;
+        }
+        .section4 article h2 {
+            font-size: 26px;
+            margin: 0 4rem;
+        }
+        .section4 article p {
+            margin: 2rem 3rem;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        .btn3 button {
+            font-weight: bold;
+            width: 25%;
+        }
+        .img4 .img4-1 {
+            width: 100%;
+            height: 400px;
+        }
+        .img4 .img4-2 {
+            height: auto;
+            width: 72%;
+            position: relative;
+            padding-top: 16rem;
+            left: 4rem;
+        }
+        .section5 article h2 {
+            margin: 0 4rem;
+            font-size: 22px;
+        }
+        .card img {
+            width: 100%;
+        }
+        .container {
+            right: 0;
+            min-height: 30vh;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .cards {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 330px);
+            grid-gap: 1rem;
+            pointer-events: none;
+        }
+        .section6 article h3 {
+            margin-top: 0;
+            padding: 0 3rem;
+            font-size: 24px;
+            line-height: 1.3;
+        }
+        .section6 article p {
+            padding: 0 3.5rem;
+            margin-top: 1rem;
+            font-size: 16px;
+        }
+        .business div {
+            padding-top: 5rem;
+            text-align: center;
+        }
+        details {
+            padding: 0rem 1rem;
+            margin-top: 2rem;
+        }
+        .mobile hr {
+            padding: none;
+            margin: 1rem 3rem 1rem 2rem;
+            border: 1px solid grey;
+            width: 80%;
+        }
+    }
